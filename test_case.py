@@ -18,10 +18,10 @@ def print_pretty(path):
 
 
 def simulated_anneal(t):
-    start_temp = 1
-    frozen = .001
+    start_temp = 10
+    frozen = .01
     iterations = 10
-    alpha = .97
+    alpha = .98
     a = Anneal(t, start_temp, frozen, iterations, alpha)
     # print_pretty(a.solution_path)
     return a.solution_weight, a.solution_path
